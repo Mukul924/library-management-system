@@ -1,6 +1,10 @@
 # Library Management System
 
-A console-based Library Management System built using Core Java and JDBC.
+A console-based Library Management System built using Core Java and JDBC with MySQL database connectivity.
+
+The application lets you manage authors and books through a simple menu-driven console interface.
+
+---
 
 ## Features
 
@@ -8,10 +12,14 @@ A console-based Library Management System built using Core Java and JDBC.
 * View All Authors
 * Add Book
 * Delete Book
+* Update Book
+* View All Books
 * Search Author By Name
-* Exception Handling using Custom Exceptions
+* Custom Exception Handling
 * JDBC Database Connectivity
 * Console-based Menu System
+
+---
 
 ## Technologies Used
 
@@ -20,37 +28,69 @@ A console-based Library Management System built using Core Java and JDBC.
 * MySQL
 * VS Code
 
+---
+
 ## Project Structure
 
 ```text
 src/
- ├── controller
- ├── dao
- ├── Exceptions
- ├── model
- ├── services
- └── utils
+├── controller
+├── dao
+├── Exceptions
+├── model
+├── services
+└── utils
 ```
 
-## Database
+---
 
-Database Name:
+## Database Details
 
-```text
-library_db
-```
+**Database Name:** `library_db`
 
-Tables:
+**Tables:**
 
-* author_tb
-* book_tb
+* `author_tb`
+* `book_tb`
 
-## How To Run
+---
+
+## How to Run
 
 1. Create the database using `library_db.sql`
 2. Open the project in VS Code
 3. Configure MySQL username and password in `DbConnection.java`
 4. Run `Main.java`
+
+---
+
+## Screenshots
+
+### Main Menu
+
+![Main Menu](images/main-menu.png)
+
+### Author Menu
+
+![Author Menu](images/author-menu.png)
+
+### Book Menu
+
+![Book Menu](images/book-menu.png)
+
+### Add Book
+
+![Add Book](images/add-book.png)
+
+### View All Authors
+
+![View All Authors](images/get-all-author.png)
+
+### View All Books
+
+![View All Books](images/get-all-book.png)
+
+---
 
 ## Learning Outcomes
 
@@ -63,6 +103,15 @@ This project helped in understanding:
 * SQL Queries
 * Java Console Application Development
 
+---
+
 ## Author
 
-Mukul Dixit
+**Mukul Dixit**
+
+---
+
+## Notes
+
+* Make sure MySQL is running before starting the application.
+* Update database credentials in `DbConnection.java` according to your system.
